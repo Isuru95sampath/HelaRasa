@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
 }
 .header{
-    background-image: url(istockphoto-1372953259-1024x1024.jpg);
+    background-image: url(images/istockphoto-1372953259-1024x1024.jpg);
     display: flex;
     background-size: cover;
 
@@ -227,23 +227,23 @@ body {
 }
 
 .card5 {
-    background-image: url(kottu.jpg);
+    background-image: url(images/kottu.jpg);
 }
 
 .card4 {
-    background-image: url(kiribath-6314067_640.jpg);
+    background-image: url(images/kiribath-6314067_640.jpg);
 }
 
 .card3 {
-    background-image: url(indiappa-6308473_640.jpg);
+    background-image: url(images/indiappa-6308473_640.jpg);
 }
 
 .card2 {
-    background-image: url(pittu.jpeg);
+    background-image: url(images/pittu.jpeg);
 }
 
 .card1 {
-    background-image: url(Fish\ ambul\ thiyal.jpg);
+    background-image: url(images/Fish\ ambul\ thiyal.jpg);
 }
 
 
