@@ -95,3 +95,28 @@ revealCards(); // Run on page load in case some cards are already visible
         window.addEventListener("scroll", checkVisibility);
         window.addEventListener("load", checkVisibility);
     });
+
+
+
+    //About sectin
+
+    // Create an IntersectionObserver instance
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Add the 'in-view' class when the element is in view
+        entry.target.classList.add('in-view');
+        // Optional: Once the animation is done, you can stop observing the element
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 }); // 50% of the element needs to be visible
+  
+  // Observe the elements
+  const aboutContent = document.querySelector('.about-content');
+  const aboutImage = document.querySelector('.about-image');
+  
+  observer.observe(aboutContent);
+  observer.observe(aboutImage);
+  
+    
