@@ -13,8 +13,7 @@ body {
     background-image: url(images/istockphoto-1372953259-1024x1024.jpg);
     display: flex;
     background-size: cover;
-
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     
 }
 
@@ -163,12 +162,13 @@ body {
     cursor: pointer;
 }
 
+
+            /*cards*/
+
 .top-destinations {
     text-align: center;
     padding: 50px 20px;
 }
-
-                /*cards*/
 
 .cards-container {
     display: flex;
@@ -187,36 +187,31 @@ body {
     background-position: center;
     display: flex;
     align-items: flex-end;
-    opacity: 0; /* Initially hidden */
-    transform: scale(0.8) translateY(50px); /* Start smaller & slightly down */
-    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 1s ease-out;
+    opacity: 0;
+    transform: translateX(-150px) scale(0.8); /* Start from left */
+    transition: 
+        transform 0.9s ease-out, 
+        opacity 0.9s ease-out;
 }
 
-.card:nth-child(1) {
-    transform: scale(0.8) translateX(-100px);
-}
-
-.card:nth-child(2) {
-    transform: scale(0.8) translateX(100px);
-}
-
-.card:nth-child(3) {
-    transform: scale(0.8) translateY(-100px);
-}
-
-.card:nth-child(4) {
-    transform: scale(0.8) translateY(100px);
-}
-
+/* Show effect when scrolled into view */
 .card.show {
     opacity: 1;
-    transform: scale(1) translateX(0) translateY(0); /* Smooth expansion */
+    transform: translateX(0) scale(1);
 }
 
+/* Staggered Animation */
 .card.show:nth-child(1) { transition-delay: 0.1s; }
 .card.show:nth-child(2) { transition-delay: 0.2s; }
 .card.show:nth-child(3) { transition-delay: 0.3s; }
 .card.show:nth-child(4) { transition-delay: 0.4s; }
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.10);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
 
 .card-content {
     background-color: rgba(245, 240, 204, 0.705);
@@ -276,6 +271,11 @@ footer .social-media a {
 
 footer .social-media a:hover {
     color: #05a112;
+}
+@media (max-width: 768px) {
+    .hero .img {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -356,6 +356,23 @@ footer .social-media a:hover {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+@media(max-width: 768px){
+    .card {
+        border: 2px solid #088103;
+        border-radius: 10px;
+        width: auto;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        opacity: 0;
+        transform: translateX(-150px) scale(0.8); /* Start from left */
+        transition: 
+            transform 0.8s ease-out, 
+            opacity 0.8s ease-out;
     }
 }
 

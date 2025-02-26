@@ -14,6 +14,47 @@ window.addEventListener("scroll", () => {
 });
 
 
+let lastScrollTop = 0;
+const text = document.querySelector('.card');
+
+window.addEventListener('scroll', function() {
+    let currentScroll = window.scrollY;
+
+    if (currentScroll > lastScrollTop) {
+        // Scrolling down - remove shine and bounce
+        text.classList.remove('shine', 'bounce');
+    } else {
+        // Scrolling up - add shine and bounce
+        text.classList.add('shine', 'bounce');
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".card");
+
+    function checkCards() {
+        const triggerBottom = window.innerHeight * 0.85; // 85% of viewport height
+
+        cards.forEach((card) => {
+            const cardTop = card.getBoundingClientRect().top;
+
+            if (cardTop < triggerBottom) {
+                card.classList.add("show"); // Show when in viewport
+            } else {
+                card.classList.remove("show"); // Hide when scrolled away
+            }
+        });
+    }
+
+    window.addEventListener("scroll", checkCards);
+    checkCards(); // Run on page load
+});
+
+
 const cards = document.querySelectorAll(".card");
 
 function revealCards() {
