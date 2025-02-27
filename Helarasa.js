@@ -31,7 +31,7 @@ window.addEventListener('scroll', function() {
 });
 
 
-
+//card animations
 
 document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".card");
@@ -53,24 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkCards);
     checkCards(); // Run on page load
 });
-
-
-const cards = document.querySelectorAll(".card");
-
-function revealCards() {
-    let triggerHeight = window.innerHeight * 0.85; // Trigger when 85% in view
-
-    cards.forEach((card) => {
-        let cardTop = card.getBoundingClientRect().top;
-        if (cardTop < triggerHeight) {
-            card.classList.add("show");
-        }
-        
-    });
-}
-
-window.addEventListener("scroll", revealCards);
-revealCards(); // Run on page load in case some cards are already visible
 
 
 
