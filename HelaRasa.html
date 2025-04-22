@@ -1,289 +1,277 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hela Rasa</title>
-    <link rel="stylesheet" href="HelaRasa.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hela Rasa - Authentic Sri Lankan Cuisine</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="HelaRasa.css">
 </head>
 <body>
-    <header class="header">
-        
-        <div class="logo"><span class="span1">H</span>ela Rasa</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#menu">Menu</a>
-            <a href="#specialties">Specialties</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <button class="Reserve-Table">Reserve Table</button>
-    </header>
+  <!-- Header / Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/helarasa-logo.png" alt="Hela Rasa" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#our-cuisine">Our Cuisine</a></li>
+          <li class="nav-item"><a class="nav-link" href="#popular-dishes">Popular Dishes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cooking-classes">Cooking Classes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recipes">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <div class="scroll-container">
-        <section class="hero">
-            <h3>Discover the Authentic Flavors of Sri Lanka</h3>
-                <img src="images/foods.png" alt="Scrolling Rotating Image" class="img1">
-          <h1>Experience the<br> Rich Tastes of <br><span class="span2">Sri Lankan Cuisine.</span></h1>
-            <h2>We bring you the authentic flavors of Sri Lanka, crafted with tradition and love.</h2>
-            <div class="search-bar">
-                <input type="text" placeholder="Search for a dish" value="Kottu Roti">
-                <input type="date">
-                <input type="number" placeholder="Number of guests">
-                <button>Find Food</button>
-            </div>
+  <!-- Hero Section -->
+  <header class="header">
+    <div class="container hero">
+      <div class="hero-content">
+        <h1 class="span2">Experience <span class="span1">Sri Lankan</span> Flavors</h1>
+        <h2>Authentic Cuisine with HelaRasa</h2>
+        <a href="#popular-dishes" class="btn btn-danger">Explore Our Dishes</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-food.jpg" alt="Sri Lankan Food" class="img1">
+      </div>
+    </div>
+  </header>
+
+  <!-- Our Cuisine Section -->
+  <section id="our-cuisine" class="container my-5 animate fadeInUp">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="images/sri-lankan-spices.jpg" alt="Sri Lankan Spices" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h2>Our Sri Lankan Cuisine</h2>
+        <p>Sri Lankan cuisine is renowned for its complex flavors and abundant spices. With a history influenced by colonial powers, foreign traders, and neighboring countries, our traditional dishes are a unique blend of indigenous ingredients and culinary techniques perfected over centuries.</p>
+        <p>From fragrant rice dishes to spicy curries and fresh seafood preparations, explore the rich tapestry of tastes that define Sri Lankan food culture.</p>
+        <a href="#popular-dishes" class="btn btn-outline-danger">Discover Our Dishes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Dishes Section -->
+  <section id="popular-dishes" class="container my-5 animate fadeInUp">
+    <h2 class="text-center mb-4">Popular Sri Lankan Dishes</h2>
+    <div class="row text-center">
+      <div class="col-6 col-md-3 mb-4">
+        <div class="icon-box">
+          <img src="images/rice-curry.png" alt="icon" width="50">
+          <p>Rice & Curry</p>
         </div>
-        </section>
-<!--Middle part 4tos cards -->
-        <section class="top-destinations">
-            <h2>Explore our specialty dishes</h2>
-            <div class="cards-container">
-                <div class="card card1">
-                    <div class="card-content">
-                        <a href="https://www.islandsmile.org/ambulthiyal-sri-lankan-sour-fish/"> <h3>Fish Ambul Thiyal</h3></a>
-                        
-                        <div class="stars">
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span>&#9733;</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card2">
-                    <div class="card-content">
-                        <a href="http://www.kitchensimmer.com/2015/09/sri-lankan-pittu-rice-flour-and-coconut.html"> <h3>Pittu</h3></a>
-                        <div class="stars">
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span>&#9733;</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card3">
-                    <div class="card-content">
-                        <a href="https://www.mylankanfoodjournal.com/string-hoppers/"><h3>String Hoppers (Idiyappa)</h3></a> 
-                        <div class="stars">
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span>&#9733;</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card4">
-                    <div class="card-content">
-                        <a href="https://www.hungrylankan.com/recipes/kiribath-sri-lankan-milk-rice/"><h3>Milk Rice (Kiribath)</h3></a>
-                        <div class="stars">
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span>&#9733;</span>
-                            <span>&#9733;</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card5">
-                    <div class="card-content">
-                        <a href="https://www.theflavorbender.com/sri-lankan-chicken-kottu-roti-koththu/"><h3>Kottu Roty</h3></a>
-                        <div class="stars">
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span>&#9733;</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card6">
-                    <div class="card-content">
-                        <a href="https://www.hungrylankan.com/recipes/sri-lankan-hoppers/"><h3>Hoppers</h3></a>
-                        <div class="stars">
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span>&#9733;</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card7">
-                    <div class="card-content">
-                        <a href="https://www.theflavorbender.com/sri-lankan-pol-roti-coconut-roti/"><h3>Pol Roti</h3></a>
-                        <div class="stars">
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span>&#9733;</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card8">
-                    <div class="card-content">
-                        <a href="https://en.wikipedia.org/wiki/Pol_sambol"><h3>Pol Sambol</h3></a>
-                        <div class="stars">
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span class="filled">&#9733;</span>
-                            <span>&#9733;</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Us Section -->
-         
-        <section id="about" class="about-us animate fadeInUp">
-            <h2>About Us</h2>
-            <div class="about-content">
-                
-                <p>
-                    Welcome to <strong>Hela Rasa</strong> – Your Gateway to Authentic Sri Lankan Flavors!<br>
-        
-                    At Hela Rasa, we are passionate about bringing you the authentic flavors of Sri Lanka.
-                    Our mission is to celebrate the rich culinary heritage of this beautiful island nation and share its
-                    vibrant tastes with the world.<br>
-        
-                    Sri Lankan cuisine is a delightful fusion of spices, fresh ingredients,
-                    and centuries-old traditions. From the fiery heat of our curries to the comforting
-                    sweetness of our desserts, every dish tells a story of culture, history, and love. At Hela Rasa,
-                    we strive to preserve these traditions while offering you a modern,
-                    convenient way to experience them.
-                </p>
-            </div>
-            <div class="about-image">
-                <img src="images/flavers.jpeg" alt="About Us Image">
-            </div>
-        </section>
-        
-        </section>
-        
-        <section id="menu" class="full-menu animate fadeInLeft">
-            <h2>Our Menu</h2>
-            <div class="menu-category">
-                <h3>Appetizers</h3>
-                <ul>
-                    <li>Vegetable Roti - Rs. 300</li>
-                    <li>Chicken Samosas - Rs. 350</li>
-                    <li>Fish Cutlets - Rs. 400</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Full Menu Section -->
-        <section id="menu" class="full-menu">
-            <h2>Our Menu</h2>
-            <div class="menu-category">
-                <h3>Appetizers</h3>
-                <ul>
-                    <li>Vegetable Roti - Rs. 300</li>
-                    <li>Chicken Samosas - Rs. 350</li>
-                    <li>Fish Cutlets - Rs. 400</li>
-                </ul>
-            </div>
-            <div class="menu-category">
-                <h3>Main Dishes</h3>
-                <ul>
-                    <li>Kottu Roti - Rs. 800</li>
-                    <li>Hoppers (Appa) - Rs. 600</li>
-                    <li>String Hoppers (Idiyappa) - Rs. 700</li>
-                </ul>
-            </div>
-            <div class="menu-category">
-                <h3>Desserts</h3>
-                <ul>
-                    <li>Watalappan - Rs. 300</li>
-                    <li>Kokis - Rs. 250</li>
-                    <li>Aluwa - Rs. 200</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Chef’s Specials -->
-        <section id="specialties" class="chef-specials animate fadeInRight">
-            <h2>Chef’s Specials</h2>
-            <div class="special-dish">
-                <h3>Lamprais</h3>
-                <p>A Dutch-influenced Sri Lankan dish with rice, meat, and sambols, wrapped in a banana leaf and baked. - Rs. 1200</p>
-            </div>
-        </section>
-
-        <!-- Customer Reviews -->
-        <section class="customer-reviews animate zoomIn">
-            <h2>What Our Customers Say</h2>
-            <div class="review">
-                <p>"The best Sri Lankan food I’ve ever had! The flavors are incredible, and the service is top-notch."</p>
-                <div class="stars">
-                    <span class="filled">&#9733;</span>
-                    <span class="filled">&#9733;</span>
-                    <span class="filled">&#9733;</span>
-                    <span class="filled">&#9733;</span>
-                    <span>&#9733;</span>
-                </div>
-                <p>- John D.</p>
-            </div>
-            <div class="review">
-                <p>"A must-visit for anyone who loves authentic Sri Lankan cuisine. Highly recommended!"</p>
-                <div class="stars">
-                    <span class="filled">&#9733;</span>
-                    <span class="filled">&#9733;</span>
-                    <span class="filled">&#9733;</span>
-                    <span class="filled">&#9733;</span>
-                    <span class="filled">&#9733;</span>
-                </div>
-                <p>- Sarah L.</p>
-            </div>
-        </section>
-
-        <!-- Gallery -->
-        <section class="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-images">
-                <img src="gallery1.jpg" alt="Gallery Image 1">
-                <img src="gallery2.jpg" alt="Gallery Image 2">
-                <img src="gallery3.jpg" alt="Gallery Image 3">
-            </div>
-        </section>
-
-        <!-- Events and Catering -->
-        <section class="events-catering">
-            <h2>Events & Catering</h2>
-            <p>Host your next event with us! We offer catering services for weddings, corporate events, and private parties. Contact us for more details.</p>
-        </section>
-
-        <!-- Contact Us -->
-        <section id="contact" class="contact-us">
-            <h2>Contact Us</h2>
-            <p>Address: 25/1 Hela Rasa Street, Colombo, Sri Lanka</p>
-            <p>Phone: 078 558289</p>
-            <p>Email: info@helarasa.com</p>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="icon-box">
+          <img src="images/hoppers.png" alt="icon" width="50">
+          <p>Hoppers (Appa)</p>
         </div>
-        <p>&copy; 2025 Hela Rasa. All rights reserved.</p>
-    </footer>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="icon-box">
+          <img src="images/kottu.png" alt="icon" width="50">
+          <p>Kottu Roti</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="icon-box">
+          <img src="images/lamprais.png" alt="icon" width="50">
+          <p>Lamprais</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="Helarasa.js"></script>
+  <!-- Cooking Classes Section -->
+  <section id="cooking-classes" class="container my-5 animate fadeInUp">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Learn Authentic Sri Lankan Cooking</h2>
+        <p>Join our expert chefs for an immersive culinary experience. Our cooking classes offer hands-on training in traditional Sri Lankan cooking techniques, from grinding your own spices to perfecting the art of rice preparation.</p>
+        <a href="#contact" class="btn btn-danger">Book a Class</a>
+      </div>
+      <div class="col-md-6">
+        <img src="images/cooking-class.jpg" class="img-fluid rounded" alt="Sri Lankan Cooking Class">
+      </div>
+    </div>
+  </section>
 
+  <!-- Featured Recipes Section -->
+  <section class="container my-5 animate fadeInUp">
+    <h2 class="text-center mb-4">Sri Lankan Food Gallery</h2>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <img src="images/curry-assortment.jpg" alt="Curry Assortment" class="img-fluid rounded">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="images/string-hoppers.jpg" alt="String Hoppers" class="img-fluid rounded">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="images/watalappan.jpg" alt="Watalappan" class="img-fluid rounded">
+      </div>
+    </div>
+    <div class="lifestyle-quote mt-4 p-4">
+      <p class="text-center">Experience the vibrant flavors of Sri Lanka, from fragrant coconut-based curries to fiery sambols and sweet desserts. Our traditional dishes showcase the island's diverse culinary heritage with ingredients like fresh seafood, tropical fruits, aromatic spices, and creamy coconut milk.</p>
+      <a href="#recipes" class="btn btn-danger d-block mx-auto mt-3" style="max-width: 200px;">View Recipes</a>
+    </div>
+  </section>
+
+  <!-- Recipes Section -->
+  <section id="recipes" class="container my-5 animate fadeInUp">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Traditional Sri Lankan Recipes</h2>
+        <ul class="visa-list">
+          <li>Chicken Curry - Spicy coconut-based curry</li>
+          <li>Pol Sambol - Coconut relish with chili and lime</li>
+          <li>Dhal Curry - Creamy lentil preparation</li>
+          <li>Wambatu Moju - Pickled eggplant dish</li>
+        </ul>
+        <a href="#process" class="btn btn-danger mt-3">View All Recipes</a>
+      </div>
+      <div class="col-md-6">
+        <img src="images/recipe-book.jpg" alt="Sri Lankan Recipe Book" class="img-fluid rounded">
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="container my-5 animate fadeInUp">
+    <h2 class="text-center mb-4">Cooking Process</h2>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="process-step">
+          <span class="step-number">01</span>
+          <h3>Select Fresh Ingredients</h3>
+          <p>Choose the freshest local produce and quality spices for authentic flavor.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="process-step">
+          <span class="step-number">02</span>
+          <h3>Prepare Spice Mixtures</h3>
+          <p>Grind and mix your spices for the perfect balance of flavors.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="process-step">
+          <span class="step-number">03</span>
+          <h3>Master Cooking Techniques</h3>
+          <p>Learn tempering, slow cooking, and other traditional methods.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="container my-5 animate fadeInUp">
+    <h2 class="text-center mb-4">Food Lover Testimonials</h2>
+    <div class="row text-center">
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <div class="video-thumbnail">
+            <img src="images/testimonial1.jpg" class="card-img-top" alt="Testimonial 1">
+            <div class="play-button">▶</div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Kasun's Review</h5>
+            <p class="card-text">"Best kottu in Colombo!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <div class="video-thumbnail">
+            <img src="images/testimonial2.jpg" class="card-img-top" alt="Testimonial 2">
+            <div class="play-button">▶</div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Amali's Review</h5>
+            <p class="card-text">"Authentic home flavors"</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <div class="video-thumbnail">
+            <img src="images/testimonial3.jpg" class="card-img-top" alt="Testimonial 3">
+            <div class="play-button">▶</div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Ravi's Review</h5>
+            <p class="card-text">"Excellent cooking class"</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <div class="video-thumbnail">
+            <img src="images/testimonial4.jpg" class="card-img-top" alt="Testimonial 4">
+            <div class="play-button">▶</div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Priya's Review</h5>
+            <p class="card-text">"Perfect spice balance"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-danger text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#our-cuisine" class="text-white">Our Cuisine</a></li>
+            <li><a href="#popular-dishes" class="text-white">Popular Dishes</a></li>
+            <li><a href="#process" class="text-white">Cooking Process</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Food Categories</h5>
+          <ul class="footer-links">
+            <li><a href="#" class="text-white">Rice Dishes</a></li>
+            <li><a href="#" class="text-white">Curries</a></li>
+            <li><a href="#" class="text-white">Street Food</a></li>
+            <li><a href="#" class="text-white">Desserts</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="#" class="text-white">Cooking Classes</a></li>
+            <li><a href="#" class="text-white">Catering</a></li>
+            <li><a href="#" class="text-white">Food Tours</a></li>
+            <li><a href="#" class="text-white">Recipe E-books</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact Information</h5>
+          <p>Need Culinary Help? <strong>+94 112 709 299</strong></p>
+          <p>Email: info@helarasa.com</p>
+          <p>Address: 123 Colombo Street, Sri Lanka</p>
+          <div class="social-media mt-3">
+            <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Helarasa.js"></script>
 </body>
 </html>
