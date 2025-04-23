@@ -64,10 +64,10 @@
     
     /* Hero Section */
     .hero {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1200/600') center/cover no-repeat;
-      color: white;
-      padding: 100px 0;
-      position: relative;
+    background: url('bg-image/Recipe\ Index\ _\ ISLAND\ SMILE.jpeg') center/cover no-repeat;
+    animation: fadeImage 5s ease-in-out infinite;   color: white;
+    padding: 100px 0;
+    position: relative;
     }
     
     .hero h1 {
@@ -115,9 +115,10 @@
     }
     
     .solution-icon {
-      width: 60px;
-      height: 60px;
+      width: 170px;
+      height: 250px;
       margin-bottom: 15px;
+      border-radius: 8px;
       transition: transform 0.3s ease;
     }
     
@@ -136,6 +137,13 @@
       overflow: hidden;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
+    }
+    .img-fluid{
+        border-radius: 10px;
+        height: 500px;
+        object-fit: cover;
+        width: 100%;
+        
     }
     
     .course-card:hover {
@@ -253,7 +261,7 @@
     
     /* Success Stories */
     .success-stories {
-      padding: 60px 0;
+      padding: 50px 0;
       background-color: var(--light);
     }
     
@@ -274,9 +282,10 @@
     
     .testimonial-info {
       position: absolute;
-      bottom: 20px;
+      bottom: -30px;
       left: 20px;
-      color: white;
+      padding-top: 40px;
+      color: var(--dark);
     }
     
     .testimonial-play {
