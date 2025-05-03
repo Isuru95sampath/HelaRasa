@@ -207,7 +207,7 @@ function setupAnimationAttributes() {
   const lifestyleQuote = document.querySelector(".lifestyle-quote");
   if (lifestyleQuote) {
     lifestyleQuote.setAttribute("data-animate", "fade-up");
-    lifestyleQuote.setAttribute("data-delay", "300");
+    lifestyleQuote.setAttribute("data-delay", "100");
   }
 
   // Recipes section

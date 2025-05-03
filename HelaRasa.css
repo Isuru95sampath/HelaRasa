@@ -54,7 +54,7 @@
     }
     
     .navbar-brand img {
-      height: 50px;
+      height: 45px;
     }
     
     .nav-link {
@@ -66,7 +66,7 @@
     .hero {
     background: url('bg-image/Recipe\ Index\ _\ ISLAND\ SMILE.jpeg') center/cover no-repeat;
     animation: fadeImage 5s ease-in-out infinite;   color: white;
-    padding: 100px 0;
+    padding: 160px 0;
     position: relative;
     }
     
@@ -272,21 +272,25 @@
     
     .testimonial img {
       border-radius: 10px;
-      filter: brightness(0.7);
+      filter: brightness(0.1);
       transition: filter 0.3s ease;
     }
     
     .testimonial:hover img {
-      filter: brightness(0.5);
+      filter: brightness(0.6);
     }
     
     .testimonial-info {
-      position: absolute;
-      bottom: -30px;
-      left: 20px;
-      padding-top: 40px;
+      position: relative;
+      bottom: 500px;
+      left: 0px;
+      padding-top: 20px;
+      border-radius: 6px;
       color: var(--dark);
+      background-color: rgba(255, 255, 255, 0.555);
+
     }
+    
     
     .testimonial-play {
       position: absolute;
